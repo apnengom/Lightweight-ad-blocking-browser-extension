@@ -27,6 +27,3 @@ It does NOT perform:
 
 ## License
 MIT
-
-## License
-MIT
