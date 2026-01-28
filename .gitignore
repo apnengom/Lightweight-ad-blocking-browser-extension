@@ -1,0 +1,44 @@
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs temporales
+# =========================
+*.log
+
+# =========================
+# Archivos de desarrollo
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Archivos de prueba
+# =========================
+test/
+tests/
+
+# =========================
+# Build / empaquetado
+# =========================
+dist/
+build/
+release/
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# Archivos generados por el navegador
+# =========================
+*.crx
+*.pem
