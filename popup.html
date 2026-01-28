@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    :root {
+      --bg-color: #000000;
+      --text-color: #ffffff;
+      --accent-color: #00ff00;
+      --btn-green: #28a745;
+      --btn-off: #444444;
+    }
+    
+    body { 
+      width: 180px; 
+      font-family: 'Consolas', 'Courier New', monospace;
+      padding: 15px; 
+      background: var(--bg-color); 
+      color: var(--text-color);
+      text-align: center;
+      margin: 0;
+      /* BORDES REDONDEADOS EN EL CONTENEDOR */
+      border: 1.5px solid var(--accent-color);
+      border-radius: 15px; 
+      overflow: hidden; /* Asegura que el contenido no sobresalga de las esquinas */
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .logo { 
+      width: 50px; 
+      height: 50px; 
+      border-radius: 12px; /* Redondeado suave para el icono */
+      border: 1px solid var(--accent-color);
+      filter: drop-shadow(0 0 5px var(--accent-color));
+    }
+
+    h3 { 
+      font-size: 14px; 
+      margin: 0; 
+      color: var(--accent-color);
+      text-transform: uppercase;
+    }
+
+    .status-text { font-size: 11px; margin-bottom: 12px; color: #aaaaaa; }
+
+    .btn { 
+      cursor: pointer; 
+      padding: 12px; 
+      border: none; 
+      /* BORDES REDONDEADOS EN EL BOTÓN */
+      border-radius: 10px; 
+      width: 100%; 
+      color: white; 
+      font-weight: bold; 
+      font-family: inherit;
+      transition: all 0.2s ease;
+    }
+
+    .on { 
+      background: var(--btn-green); 
+      box-shadow: 0 4px 0 #1e7e34, 0 0 10px rgba(40, 167, 69, 0.3);
+    }
+
+    .off { 
+      background: var(--btn-off); 
+      box-shadow: 0 4px 0 #222222;
+    }
+
+    .btn:active { 
+      transform: translateY(2px); 
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icon.png" alt="Logo" class="logo">
+    <h3>System Shield</h3>
+  </div>
+  <p class="status-text">Capa 7 Protegida</p>
+  <button id="statusBtn" class="btn on">ACTIVADO</button>
+  <script src="popup.js"></script>
+</body>
+</html>
